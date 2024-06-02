@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop_list</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/e0f77b70d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- nav 색션 -->
+        <nav id="navbar">
+            
+            <div class="navbar_logo">
+                <a href="index.html"><img src="img/logo.JPG"></a>
+            </div>
+    
+                <ul class="navbar_menu">
+                    <li>
+                        <a href="index.html" class="navbar_menu" id="home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="sneakers.html" class="navbar_menu" id="sneakers">SNEAKERS</a>
+                        <ul class="sub_menu">
+                            <li><a href="men.html">MEN</a></li>
+                            <li><a href="women.html">WOMEN</a></li>
+                            <li><a href="kids.html">KIDS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="navbar_menu" id="contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="help.html" class="navbar_menu" id="help">HELP</a>
+                        <ul class="sub_menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="chat.html">CHAT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <ul class="navbar_icons">
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"> LOGIN</a></i></li>
+                    <li><a href="shoplist.html"><i class="fas fa-shopping-cart" id="shoppingcart"> Shop_list</a></i></li>
+                </ul>
+        </nav>
+        <div class="quick_menu">
+            <div class="quick_menu1">
+            <a href="index.html"><i class="fa-solid fa-house"><br>HOME</i></a>
+            </div>
+            <div class="quick_menu2">
+            <a href="chat.html"> <i class="fa-regular fa-message"><br>CHAT</i></a><br>
+            </div>
+            <div class="quick_menu3">
+            <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+        
+        <!-- 쇼핑 리스트-->
+        <div class="shoplist_wrap">
+            <div class="shoplist_header">장바구니</div>
+            <hr class="shoplist_hr">
+            <div class="shoplist_subtitle">나의 장바구니 현황</div>
+            <div class="shoplist_container">
+                <table>
+                    <tr class="shoplist_info">
+                        <th class="shoplist1">상품사진</th>
+                        <th class="shoplist2">상품명</th>
+                        <th class="shoplist4">구매자명</th>
+                        <th class="shoplist5">주소</th>
+                        <th class="shoplist6">우편번호</th>
+                        <th class="shoplist7">수량</th>
+                        <th class="shoplist8">가격</th>
+                        <th></th>
+                    </tr>
+                    <tr class="shoplist_items">
+                        <td><a href="#"><img src="img/shoesimg1.jpg" alt="상품 1"></a></td>
+                        <td>나이키 덩크 로우 레트로 블랙</td>
+                        <td>홍길동</td>
+                        <td>경상남도 창원시 마산회원구 구암동 12길</td>
+                        <td>12345</td>
+                        <td><input type="number" id="qut" value="1"></td>
+                        <td class="price">&#8361 96,750</td>
+                        <td><button class="remove_btn" onclick="removeItem(this)">취소</button></td>
+                    </tr>
+                    <tr class="shoplist_items">
+                        <td><a href="#"><img src="img/shoesimg31.jpg" alt="상품 2"></a></td>
+                        <td>조던 1 x 트래비스 스캇 레트로 로우 세일</td>
+                        <td>홍길동</td>
+                        <td>경상남도 창원시 마산회원구 구암동 12길</td>
+                        <td>12345</td>
+                        <td><input type="number" id="qut" value="1"></td>
+                        <td class="price">&#8361  250,000</td>
+                        <td><button class="remove_btn" onclick="removeItem(this)">취소</button></td>
+                    </tr>
+                    <tr class="shoplist_items">
+                        <td><a href=""><img src="img/shoesimg33.jpg" alt="상품 3"></a></td>
+                        <td>(키즈) 아디다스 이지 부스트 350 벨루가</td>
+                        <td>홍길동</td>
+                        <td>경상남도 창원시 마산회원구 구암동 12길</td>
+                        <td>12345</td>
+                        <td><input type="number" id="qut" value="1"></td>
+                        <td class="price">&#8361  120,000</td>
+                        <td><button class="remove_btn" onclick="removeItem(this)">취소</button></td>
+                    </tr>
+                </table>
+                <br>
+                <div class="shoplist_del_info">
+                     배송비: 3,000원 
+                <br> 제주,도서지역: 5,000원 
+                <br> 해외배송: 8,000원
+                <br> 배송은 약 1-3일 정도 소요됩니다. 
+                </div><br>
+                <div class="shoplist_final">
+                <div class="shoplist_product_price">Product: &#8361 466,750</div>
+                <div class="shoplist_del_fee">Delivery:  &#8361 3,000</div><br>
+                <div class="shoplist_total_price">TOTAL: &#8361 469,750</div><br><br>
+                <button id="purchase_btn" class="btn_2">구매</button>
+                <button id="cancle_btn"   class="btn_2">취소</button>
+                </div>
+            </div>
+    
+        </div>
+
+        </div>
+        <footer id="footer">
+            <div class="footer_logo">
+                <img src="./img/logo.JPG">
+                    <div class="sns">Find Us on Social </div><hr>
+                    <div class="footer_icons"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div class="footer_icons"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+                    <div class="footer_icons"><a href="#"><i class="fab fa-youtube"></i></a></div>
+                    <div class="footer_icons"><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+            </div>
+            <div class="footer_app">
+                <div class="downapp">Download Our App</div><hr>
+                <div class="footer_appicons"><a href="#"><i class="fab fa-apple"></i></a></div>
+                <div class="footer_appicons"><a href="#"><i class="fab fa-android"></i></a></div>
+            </div>
+        
+            <div class="payment_app">
+                <div class="paymentapp">Payment Method</div><hr>
+                <div class="footer_payments"><a href="#"><i class="fab fa-cc-paypal"></i></a></div>
+                <div class="footer_payments"><a href="#"><i class="fab fa-google-pay"></i></a></div>
+                <div class="footer_payments"><a href="#"><i class="fab fa-apple-pay"></i></a></div>
+                <div class="footer_payments"><a href="#"><i class="fab fa-cc-visa"></i></a></div>
+                <div class="footer_payments"><a href="#"><i class="fab fa-cc-mastercard"></i></a></div>
+            </div>
+        
+            <div class="company_info">
+                <div class="company_name">(주) KICKS WEARS</div>
+                <div class="company_name">KICKS WEARS 주식회사: 대표 이경준</div>
+                <div class="company_name">사업장 등록번호: 12315657489</div>
+                <div class="company_name">사업장 소재지: 경상남도 창원시 마산회원구 12-12 <br> 우편번호: 12345</div>
+                <div class="company_name">EMAIL: kickswears@gamil.com</div>
+        
+            </div>
+            <div class="call_info">
+                <div class="company_call">고객센터: 1234-5678</div>
+                <div class="company_call_time">운영시간: 평일 11:00 - 18:00 (토∙일, 공휴일 휴무) <br> 점심시간: 평일 13:00 - 14:00</div>
+                <div class="company_call_question"><a href="#"><br>FAQ(자주 묻는 질문) </a></div>
+            </div>
+            <div class="copyright">
+                <div class="company_copyright">© KICKSWEARS Corp.</div>
+            </div>
+        </footer>
+          
+            <script src="project.js"></script>
+</body>
+</html>

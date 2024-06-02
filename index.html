@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_home</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/e0f77b70d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+    <!-- nav 색션 -->
+    <nav id="navbar">
+        
+        <div class="navbar_logo">
+            <a href="index.html"><img src="img/logo.JPG"></a>
+        </div>
+
+            <ul class="navbar_menu">
+                <li>
+                    <a href="index.html" class="navbar_menu" id="home">HOME</a>
+                </li>
+                <li>
+                    <a href="sneakers.html" class="navbar_menu" id="sneakers">SNEAKERS</a>
+                    <ul class="sub_menu">
+                        <li><a href="men.html">MEN</a></li>
+                        <li><a href="women.html">WOMEN</a></li>
+                        <li><a href="kids.html">KIDS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar_menu" id="contact">CONTACT</a>
+                </li>
+                <li>
+                    <a href="help.html" class="navbar_menu" id="help">HELP</a>
+                    <ul class="sub_menu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="chat.html">CHAT</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar_icons">
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"> LOGIN</a></i></li>
+                <li><a href="shoplist.html"><i class="fas fa-shopping-cart" id="shoppingcart"> Shop_list</a></i></li>
+            </ul>
+    </nav>
+    <!--슬라이드 색션-->
+    <div class="slidebox">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+        
+        <ul class="slidelist">
+            <li class="slideitem">
+                <div>
+                    <label for="slide04" class="left"></label>
+                    <a href="https://www.naver.com/"><img src="img/slide01.jpg"></a>
+                    <a href="https://www.naver.com/"><div class="imagetext_1">ADIDAS 가젤 <br> 최대 -20% 행사중<br> <button class="btn1" type="button">제품 보러 가기</button></div></a>
+                    <label for="slide02" class="right"></label>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide01" class="left"></label>
+                    <a href="https://www.naver.com/"><img src="img/slide02.jpg"></a>
+                    <a href="https://www.naver.com/"><div class="imagetext_2">JORDAN 1 <br> 최대 -10% 행사중<br> <button class="btn1" type="button">제품 보러 가기</button></div></a>
+                    <label for="slide03" class="right"></label>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide02" class="left"></label>
+                    <a href="https://www.naver.com/"><img src="img/slide03.jpg"></a>
+                    <a href="https://www.naver.com/"><div class="imagetext_3">NEW BALANCE <br> 최대 -10% 행사중<br> <button class="btn1" type="button">제품 보러 가기</button></div></a>
+                    <label for="slide04" class="right"></label>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide03" class="left"></label>
+                    <a href="https://www.naver.com/"><img src="img/slide04.jpg"></a>
+                    <a href="https://www.naver.com/"><div class="imagetext_4">ASICS <br>최대 -15% 행사중 <br> <button class="btn1" type="button">제품 보러 가기</button></div></a>
+                    <label for="slide01" class="right"></label>
+                </div>
+            </li>
+        </ul>
+    <div class="introbox">
+        <p><a href="https://www.naver.com/">더 구경하기 [여기를 클릭하세요]</a></p>
+    </div>    
+</div>
+<!--quick menu-->
+    <div class="quick_menu">
+        <div class="quick_menu1">
+        <a href="index.html"><i class="fa-solid fa-house"><br>HOME</i></a>
+        </div>
+        <div class="quick_menu2">
+        <a href="chat.html"> <i class="fa-regular fa-message"><br>CHAT</i></a><br>
+        </div>
+        <div class="quick_menu3">
+        <a href="faq.html">FAQ</a>
+        </div>
+    </div>
+    <!-- 탭(1) -->
+    <div class="wrapper_best">
+        <div class="title_header">
+            <div class="main_title">MOST POPULAR</div>
+            <div class="sub_title">인기 상품</div>
+        </div>
+        <br><hr><br>
+        <input type="radio" name="bestslider" checked id="all">
+        <input type="radio" name="bestslider" id="men">
+        <input type="radio" name="bestslider" id="women">
+        <input type="radio" name="bestslider" id="kids">
+        <input type="radio" name="bestslider" id="sale">
+        
+        <nav>
+          <label for="all" class="all">All</label>
+          <label for="men" class="men">MEN</label>
+          <label for="women" class="women"></i>WOMEN</label>
+          <label for="kids" class="kids">KIDS</label>
+          <label for="sale" class="sale">SALE</label>
+          
+          <div class="bestslider"></div>
+        </nav>
+
+        <section id="besttap_section">
+          <div class="contents bestcontent_1">
+            <div class="bestoptions">
+            <div class="imageFlex1">
+                <a href="#">
+                <img src="./img/img1.jpg">
+                <div class="imgbrand">Jordan</div>
+                <div class="imgname">조던 1 x 트래비스 스캇 레트로 로우 OG SP 세일 앤 리저록 <br><br><br>&#8361 250,000</div>
+                </a>
+            </div>
+            <div class="imageFlex2">
+                <a href="#">
+                <img src="./img/img2.jpg">
+                <div class="imgbrand">NIKE</div>
+                <div class="imgname">나이키 에어포스 1 '07 로우 화이트 <br><br> -10% <br>&#8361 <span class="discount">139,000</span> &#8361 125,100</div>
+                </a>
+            </div>
+            <div class="imageFlex3">
+                <a href="#">
+                <img src="./img/img3.jpg">
+                <div class="imgbrand">ADIDAS</div>
+                <div class="imgname">아디다스 삼바 OG 클라우드 화이트 <br><br><br>&#8361 170,000</div>
+                </a>
+            </div>
+            <div class="imageFlex4">
+                <a href="#">
+                <img src="./img/img4.jpg">
+                <div class="imgbrand">New Balance</div>
+                <div class="imgname">뉴발란스 992 메이드 인 USA 그레이 - D 스탠다드 <br><br><br>&#8361 210,000</div>
+                </a>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="contents bestcontent_2">
+            <div class="bestoptions">
+                <div class="imageFlex1">
+                    <a href="#">
+                    <img src="./img/img1.jpg">
+                    <div class="imgbrand">Jordan</div>
+                    <div class="imgname">조던 1 x 트래비스 스캇 레트로 로우 OG SP 세일 앤 리저록 <br><br><br>&#8361 250,000</div>
+                    </a>
+                </div>
+                <div class="imageFlex2">
+                    <a href="#">
+                    <img src="./img/img5.jpg">
+                    <div class="imgbrand">ASICS</div>
+                    <div class="imgname">아식스 x JJJ자운드 젤 카야노 14 실버 블랙 <br><br><br>&#8361 230,000</div>
+                    </a>
+                </div>
+                <div class="imageFlex3">
+                    <a href="#">
+                    <img src="./img/img2.jpg">
+                    <div class="imgbrand">NIKE</div>
+                    <div class="imgname">나이키 에어포스 1 '07 로우 화이트<br><br> -10% <br>&#8361 <span class="discount">139,000</span> &#8361 125,100</div>
+                    </a>
+                </div>
+                <div class="imageFlex4">
+                    <a href="#">
+                    <img src="./img/img4.jpg">
+                    <div class="imgbrand">New Balance</div>
+                    <div class="imgname">뉴발란스 992 메이드 인 USA 그레이 - D 스탠다드<br><br><br>&#8361 210,000</div>
+                    </a>
+                </div>
+                </div>
+          </div>
+
+          <div class="contents bestcontent_3">
+            <div class="bestoptions">
+                <div class="imageFlex1">
+                    <a href="#">
+                    <img src="./img/img3.jpg">
+                    <div class="imgbrand">ADIDAS</div>
+                    <div class="imgname">아디다스 삼바 OG 클라우드 화이트<br><br><br>&#8361 170,000</div>
+                    </a>
+                </div>
+                <div class="imageFlex2">
+                    <a href="#">
+                    <img src="./img/img6.jpg">
+                    <div class="imgbrand">AUTRY</div>
+                    <div class="imgname">(W) 오트리 메달리스트 로우 고트 화이트<br><br> -30% <br>&#8361 <span class="discount">250,000</span> &#8361 175,000</div>
+                    </a>
+                </div>
+                <div class="imageFlex3">
+                    <a href="#">
+                    <img src="./img/img7.jpg">
+                    <div class="imgbrand">ADIDAS</div>
+                    <div class="imgname">아디다스 가젤 코트 그린 클라우드 화이트<br><br><br>&#8361 130,000</div>
+                    </a>
+                </div>
+                <div class="imageFlex4">
+                    <a href="#">
+                    <img src="./img/img2.jpg">
+                    <div class="imgbrand">NIKE</div>
+                    <div class="imgname">나이키 에어포스 1 '07 로우 화이트<br><br> -10% <br>&#8361 <span class="discount">139,000</span> &#8361 125,100</div>
+                    </a>
+                </div>
+                </div>
+          </div>
+
+          <div class="contents bestcontent_4">
+            <div class="bestoptions">
+                <div class="imageFlex1">
+                    <a href="#">
+                        <img src="./img/img8.jpg">
+                        <div class="imgbrand">ADIDAS</div>
+                        <div class="imgname">(키즈) 아디다스 이지 부스트 350 V2 벨루가 - 리플렉티브<br><br><br>&#8361 120,000</div>
+                        </a>
+                    </div>
+                    <div class="imageFlex2">
+                        <a href="#">
+                        <img src="./img/img5.jpg">
+                        <div class="imgbrand">ASICS</div>
+                        <div class="imgname">(키즈) 아식스 x JJJ자운드 젤 카야노 14 실버 블랙<br><br><br>&#8361 130,000</div>
+                        </a>
+                    </div>
+                    <div class="imageFlex3">
+                        <a href="#">
+                         <img src="./img/img9.jpg">
+                        <div class="imgbrand">NIKE</div>
+                        <div class="imgname">(키즈)나이키 덩크 로우 레트로 블랙<br><br><br>&#8361 80,000</div>
+                        </a>
+                    </div>
+                    <div class="imageFlex4">
+                        <a href="#">
+                        <img src="./img/img2.jpg">
+                        <div class="imgbrand">NIKE</div>
+                        <div class="imgname">(키즈) 나이키 에어포스 1 '07 로우 화이트<br><br><br>&#8361 80,000</div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+          <div class="contents bestcontent_5">
+            <div class="bestoptions">
+                <div class="imageFlex1">
+                    <a href="#">
+                        <img src="./img/img9.jpg">
+                        <div class="imgbrand">NIKE</div>
+                        <div class="imgname">나이키 덩크 로우 레트로 블랙 <br><br>-25%<br>&#8361 <span class="discount">129,000</span> &#8361 96,750</div>
+                        </a>
+                    </div>
+                    <div class="imageFlex2">
+                        <a href="#">
+                        <img src="./img/img6.jpg">
+                        <div class="imgbrand">AUTRY</div>
+                        <div class="imgname">오트리 메달리스트 로우 화이트 <br><br> -30% <br>&#8361 <span class="discount">250,000</span> &#8361 175,000</div>
+                        </a>
+                    </div>
+                    <div class="imageFlex3">
+                        <a href="#">
+                            <img src="./img/img2.jpg">
+                            <div class="imgbrand">NIKE</div>
+                            <div class="imgname"> 나이키 에어포스 1 로우 화이트 <br><br> -10% <br>&#8361 <span class="discount">139,000</span> &#8361 125,100</div>
+                            </a>
+                    </div>
+                    <div class="imageFlex4">
+                        <a href="#">
+                        <img src="./img/img10.jpg">
+                        <div class="imgbrand">ADIDAS</div>
+                        <div class="imgname">아디다스 가젤 블루 <br><br> -20% <br>&#8361 <span class="discount">139,000</span> &#8361 111,200</div>
+                        </a>
+                    </div>
+            </div>
+          </div>
+        </section>
+     </div>
+
+     <!-- 탭 색션(2) -->
+    <div class="wrapper">
+        <input type="radio" name="slider" checked id="announcement">
+        <input type="radio" name="slider" id="shipping">
+        <input type="radio" name="slider" id="return">
+        <input type="radio" name="slider" id="helps">
+        <input type="radio" name="slider" id="about">
+        
+        <nav>
+          <label for="announcement" class="announcement"><i class="fas fa-bullhorn"></i>공지사항</label>
+          <label for="shipping" class="shipping"><i class="fas fa-truck"></i>배송정보</label>
+          <label for="return" class="return"><i class="fas fa-code"></i>반품</label>
+          <label for="helps" class="helps"><i class="far fa-envelope"></i>HELP</label>
+          <label for="about" class="about"><i class="far fa-user"></i>ABOUT</label>
+          
+          <div class="slider"></div>
+        </nav>
+        <br>
+        <hr>
+        <section id="tap_section">
+          <div class="content content-1">
+            <div class="title">공지사항</div>
+            <p><img src="img/logo.JPG"> 
+                <br>안녕하세요. 
+                <br> KICKS WEARS 입니다. 우선 저희 웹사이트를 방문해 주셔서 감사합니다.
+                <br><br> 저희 사이트는 회원가입 후 주문이 가능한 쇼핑물이니 양해부탁드립니다. 
+                <br>비회원인 경우는 상단에 LOGIN 버튼을 클릭후 회원가입 절차에 따라 회원가입을 부탁드립니다. 
+                <br> 저희 제품은 100% 정품이며 전문가들의 검수 후 제품을 출고하고 있습니다. 
+                <br><br>감사합니다. 좋은 하루 되세요. </p>
+          </div>
+          <div class="content content-2">
+            <div class="title">배송 정보</div>
+            <p><img src="img/logo.JPG"> 
+                <br>안녕하세요. 
+                <br> KICKS WEARS 입니다. 우선 저희 웹사이트를 방문해 주셔서 감사합니다.
+                <br><br> 배송비: 3,000원 
+                <br> 제주,도서지역: 5,000원 
+                <br>해외배송: 8,000원
+                <br> 주소를 상세하게 적어주세요, 우편번호도 꼭 적어주세요. 
+                <br> 배송은 약 1-3일 정도 소요됩니다. 
+                <br><br>감사합니다. 좋은 하루 되세요. </p>
+          </div>
+          <div class="content content-3">
+            <div class="title">반품/교환</div>
+            <p><img src="img/logo.JPG"> 
+                <br>안녕하세요. 
+                <br> KICKS WEARS 입니다. 우선 저희 웹사이트를 방문해 주셔서 감사합니다.
+                <br><br> 반품배송비: 구매자 부담 <br> 교환: 구매자 부담 (8,000원) 
+                <br> *단, 제품이 불량, 스크래치가 있을 경우 판매자가 부담 합니다. 
+                <br> 보내실 곳: 창원시 마산회원구 1로 11-11 (kicks wears 건물)
+                <br><br>감사합니다. 좋은 하루 되세요. </p>
+          </div>
+          <div class="content content-4">
+            <div class="title">HELP</div>
+            <p><img src="img/logo.JPG"> 
+                <br>안녕하세요. 
+                <br> KICKS WEARS 입니다. 우선 저희 웹사이트를 방문해 주셔서 감사합니다.
+                <br><br>도움이 필요하신경우 오픈카카오톡 또는 화면 상단에 HELP -> FAQ 또는 Chat을 통해 도움을 받을실수 있습니다. 
+                <br> CONTACT을 통해 EMAIL로 답변을 받을실수있습니다. 
+                <br> 시간: 09:00 ~ 18:00 (월~금)
+                <br>주말, 공휴일: 10:00 ~ 17:00
+                <br> <br> 저희 제품은 100% 정품이며 전문가들의 검수 후 제품을 출고하고 있습니다. 
+                <br><br>감사합니다. 좋은 하루 되세요. </p>
+          </div>
+          <div class="content content-5">
+            <div class="title">ABOUT US</div>
+            <p><img src="img/logo.JPG"><br>안녕하세요.
+                 <br> KICKS WEARS 입니다. 우선 저희 웹사이트를 방문해 주셔서 감사합니다.
+                 <br><br> KICKS WEARS는 한정판, 트랜디한 신발을 리셀 판매하는 사이트입니다.  
+                 <br> 저희는 STOCK X, cool kicks, complex와 협업을 하고 있습니다. 
+                 <br> 저희 제품은 100% 정품이며 전문가들의 검수 후 제품을 출고하고 있습니다. 
+                 <br><br>감사합니다. 좋은 하루 되세요. </p>
+          </div>
+        </section>
+     </div>
+
+     <!-- 신발이미지 색션-->
+     <div class="shoesimg_box">
+        <div class="shoesimg_1">
+            <a href="#"><img src="img/shoesimg1.jpg"></a>
+            <a href="#"><img src="img/shoesimg2.jpg"></a>
+            <a href="#"><img src="img/shoesimg3.jpg"></a>
+            <a href="#"><img src="img/shoesimg4.jpg"></a>
+            <a href="#"><img src="img/shoesimg5.jpg"></a>
+            <a href="#"><img src="img/shoesimg6.jpg"></a>
+            <a href="#"><img src="img/shoesimg7.jpg"></a>
+            <a href="#"><img src="img/shoesimg8.jpg"></a>
+        </div>
+
+        <div class="shoesimg_2">
+            <a href="#"><img src="img/shoesimg9.jpg"></a>
+            <a href="#"><img src="img/shoesimg10.jpg"></a>
+            <a href="#"><img src="img/shoesimg11.jpg"></a>
+            <a href="#"><img src="img/shoesimg12.jpg"></a>
+            <a href="#"><img src="img/shoesimg13.jpg"></a>
+            <a href="#"><img src="img/shoesimg14.jpg"></a>
+            <a href="#"><img src="img/shoesimg15.jpg"></a>
+            <a href="#"><img src="img/shoesimg16.jpg"></a>
+        </div>
+
+        <div class="shoesimg_3">
+            <a href="#"><img src="img/shoesimg17.jpg"></a>
+            <a href="#"><img src="img/shoesimg18.jpg"></a>
+            <a href="#"><img src="img/shoesimg19.jpg"></a>
+            <a href="#"><img src="img/shoesimg20.jpg"></a>
+            <a href="#"><img src="img/shoesimg21.jpg"></a>
+            <a href="#"><img src="img/shoesimg22.jpg"></a>
+            <a href="#"><img src="img/shoesimg23.jpg"></a>
+            <a href="#"><img src="img/shoesimg24.jpg"></a>
+        </div>
+
+        <div class="shoesimg_4">
+            <a href="#"><img src="img/shoesimg25.jpg"></a>
+            <a href="#"><img src="img/shoesimg26.jpg"></a>
+            <a href="#"><img src="img/shoesimg27.jpg"></a>
+            <a href="#"><img src="img/shoesimg28.jpg"></a>
+            <a href="#"><img src="img/shoesimg29.jpg"></a>
+            <a href="#"><img src="img/shoesimg30.jpg"></a>
+            <a href="#"><img src="img/shoesimg31.jpg"></a>
+            <a href="#"><img src="img/shoesimg32.jpg"></a>
+        </div>
+
+        <div class="shoesimg_5">
+            <a href="#"><img src="img/shoesimg33.jpg"></a>
+            <a href="#"><img src="img/shoesimg34.jpg"></a>
+            <a href="#"><img src="img/shoesimg35.jpg"></a>
+            <a href="#"><img src="img/shoesimg36.jpg"></a>
+            <a href="#"><img src="img/shoesimg37.jpg"></a>
+            <a href="#"><img src="img/shoesimg38.jpg"></a>
+            <a href="#"><img src="img/shoesimg39.jpg"></a>
+            <a href="#"><img src="img/shoesimg40.jpg"></a>
+        </div>
+
+     </div>
+     <!-- 이미지섹션 -->
+     <div id="container">
+        <img src="img/imggal1.jpg" alt="photo" id="photo">
+        <ul id="gallery">
+            <li><img src="img/imggal1.jpg"></li>
+            <li><img src="img/imggal2.jpg"></li>
+            <li><img src="img/imggal3.jpg"></li>
+            <li><img src="img/imggal4.jpg"></li>
+            <li><img src="img/imggal5.jpg"></li>
+            <li><img src="img/imggal6.jpg"></li>
+
+            <li><img src="img/imggal7.jpg"></li>
+            <li><img src="img/imggal8.jpg"></li>
+            <li><img src="img/imggal9.jpg"></li>
+            <li><img src="img/imggal10.jpg"></li>
+            <li><img src="img/imggal11.jpg"></li>
+            <li><img src="img/imggal12.jpg"></li>
+
+            <li><img src="img/imggal13.jpg"></li>
+            <li><img src="img/imggal14.jpg"></li>
+            <li><img src="img/imggal15.jpg"></li>
+            <li><img src="img/imggal16.jpg"></li>
+            <li><img src="img/imggal17.jpg"></li>
+            <li><img src="img/imggal18.jpg"></li>
+
+            <li><img src="img/imggal19.jpg"></li>
+            <li><img src="img/imggal20.jpg"></li>
+            <li><img src="img/imggal21.jpg"></li>
+            <li><img src="img/imggal22.jpg"></li>
+            <li><img src="img/imggal23.jpg"></li>
+            <li><img src="img/imggal24.jpg"></li>
+
+            <li><img src="img/imggal25.jpg"></li>
+            <li><img src="img/imggal26.jpg"></li>
+            <li><img src="img/imggal27.jpg"></li>
+            <li><img src="img/imggal28.jpg"></li>
+            <li><img src="img/imggal29.jpg"></li>
+            <li><img src="img/imggal30.jpg"></li>
+        </ul>
+    </div>   
+</div>
+<footer id="footer">
+    <div class="footer_logo">
+        <img src="./img/logo.JPG">
+            <div class="sns">Find Us on Social </div><hr>
+            <div class="footer_icons"><a href="#"><i class="fab fa-instagram"></i></a></div>
+            <div class="footer_icons"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="footer_icons"><a href="#"><i class="fab fa-youtube"></i></a></div>
+            <div class="footer_icons"><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+    </div>
+    <div class="footer_app">
+        <div class="downapp">Download Our App</div><hr>
+        <div class="footer_appicons"><a href="#"><i class="fab fa-apple"></i></a></div>
+        <div class="footer_appicons"><a href="#"><i class="fab fa-android"></i></a></div>
+    </div>
+
+    <div class="payment_app">
+        <div class="paymentapp">Payment Method</div><hr>
+        <div class="footer_payments"><a href="#"><i class="fab fa-cc-paypal"></i></a></div>
+        <div class="footer_payments"><a href="#"><i class="fab fa-google-pay"></i></a></div>
+        <div class="footer_payments"><a href="#"><i class="fab fa-apple-pay"></i></a></div>
+        <div class="footer_payments"><a href="#"><i class="fab fa-cc-visa"></i></a></div>
+        <div class="footer_payments"><a href="#"><i class="fab fa-cc-mastercard"></i></a></div>
+    </div>
+
+    <div class="company_info">
+        <div class="company_name">(주) KICKS WEARS</div>
+        <div class="company_name">KICKS WEARS 주식회사: 대표 이경준</div>
+        <div class="company_name">사업장 등록번호: 12315657489</div>
+        <div class="company_name">사업장 소재지: 경상남도 창원시 마산회원구 12-12 <br> 우편번호: 12345</div>
+        <div class="company_name">EMAIL: kickswears@gamil.com</div>
+
+    </div>
+    <div class="call_info">
+        <div class="company_call">고객센터: 1234-5678</div>
+        <div class="company_call_time">운영시간: 평일 11:00 - 18:00 (토∙일, 공휴일 휴무) <br> 점심시간: 평일 13:00 - 14:00</div>
+        <div class="company_call_question"><a href="#"><br>FAQ(자주 묻는 질문) </a></div>
+    </div>
+    <div class="copyright">
+        <div class="company_copyright">© KICKSWEARS Corp.</div>
+    </div>
+</footer>
+  
+    <script src="project.js"></script>
+</body>
+</html>

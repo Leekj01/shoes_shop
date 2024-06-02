@@ -1,0 +1,108 @@
+.wrapper_best{
+    max-width: 1200px;
+    max-height: 700px;
+    width: 100%;
+    height: 700px;
+    margin: 80px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    background: black;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper_best > .title_header{
+    color: white;
+    display: block;
+  }
+  .wrapper_best > .title_header > .main_title{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+  .wrapper_best > .title_header > .sub_title{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+  }
+  .wrapper_best > nav{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper_best > nav > label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  .wrapper_best nav label:hover{
+    background: grey;
+  }
+  /**/
+  
+  #all:checked ~ nav label.all,
+  #men:checked ~ nav label.men,
+  #women:checked ~ nav label.women,
+  #kids:checked ~ nav label.kids,
+    #sale:checked ~ nav label.sale
+  {
+    color: black;
+  }
+  nav .bestslider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0%;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #men:checked ~ nav .bestslider{
+    left: 20%;
+  }
+  #women:checked ~ nav .bestslider{
+    left: 40%;
+  }
+  #kids:checked ~ nav .bestslider{
+    left: 60%;
+  }
+  #sale:checked ~ nav .bestslider{
+    left: 80%;
+  }
+  #besttap_section .contents{
+    display: none;
+    background: black;
+  }
+  #all:checked ~ #besttap_section .bestcontent_1,
+  #men:checked ~ #besttap_section .bestcontent_2,
+  #women:checked ~ #besttap_section .bestcontent_3,
+  #kids:checked ~ #besttap_section .bestcontent_4,
+    #sale:checked ~ #besttap_section .bestcontent_5
+  {
+    display: block;
+  }
+  /*문단 정렬방식을 정하는 속성*/
+  
+  #besttap_section .contents p{
+  text-align: justify;
+  color: white;
+  }
+  #besttap_section > .contents > p > img{
+    width: 235px;
+    height: 249px;
+  }
